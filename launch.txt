@@ -1,0 +1,5 @@
+docker run --rm -it --volume "${PWD}:/csce431/book_collection_solution" -e DATABASE_USER=test_app -e DATABASE_PASSWORD=test_password -p 3000:3000 dmartinez05/ruby_rails_postgresql:latest
+
+rails server --binding=0.0.0.0
+
+http://127.0.0.1:3000
